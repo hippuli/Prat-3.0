@@ -607,8 +607,9 @@ end
     local cf = _G["ChatFrame1"]
     local prof = self.db.profile
 
-    local minwidthdefault, minheightdefault = cf:GetMinResize()
-    local maxwidthdefault, maxheightdefault = cf:GetMaxResize()
+    --local minwidthdefault, minheightdefault = cf:GetMinResize()
+    --local maxwidthdefault, maxheightdefault = cf:GetMaxResize()
+	local minwidthdefault, minheightdefault, maxwidthdefault, maxheightdefault = cf:GetResizeBounds()
 
     prof.minchatwidthdefault = minwidthdefault
     prof.maxchatwidthdefault = maxwidthdefault
@@ -622,15 +623,17 @@ end
   function mod:SetParameters(cf, enabled)
     local prof = self.db.profile
     if enabled then
-      cf:SetMinResize(prof.minchatwidth, prof.minchatheight)
-      cf:SetMaxResize(prof.maxchatwidth, prof.maxchatheight)
+      --cf:SetMinResize(prof.minchatwidth, prof.minchatheight)
+      --cf:SetMaxResize(prof.maxchatwidth, prof.maxchatheight)
+	  cf:SetResizeBounds(prof.minchatwidth, prof.minchatheight, prof.maxchatwidth, prof.maxchatheight)
 
       if prof.removeclamp then
         cf:SetClampRectInsets(0, 0, 0, 0)
       end
     else
-      cf:SetMinResize(prof.minchatwidthdefault, prof.minchatheightdefault)
-      cf:SetMaxResize(prof.maxchatwidthdefault, prof.maxchatheightdefault)
+      --cf:SetMinResize(prof.minchatwidthdefault, prof.minchatheightdefault)
+      --cf:SetMaxResize(prof.maxchatwidthdefault, prof.maxchatheightdefault)
+	  cf:SetResizeBounds(prof.minchatwidth, prof.minchatheight, prof.maxchatwidth, prof.maxchatheight)
     end
   end
 

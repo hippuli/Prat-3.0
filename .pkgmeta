@@ -1,6 +1,5 @@
 package-as: Prat-3.0
 
 move-folders:
-  Details/Details: Details
   Prat-3.0/Prat-3.0: Prat-3.0
   Prat-3.0/Prat-3.0_Libraries: Prat-3.0_Libraries

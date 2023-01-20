@@ -27,6 +27,28 @@
 Prat:AddModuleToLoad(function()
 
   local PRAT_MODULE = Prat:RequestModuleName("PlayerNames")
+  
+  BNET_CLIENT_WOW = "WoW";
+  BNET_CLIENT_SC2 = "S2";
+  BNET_CLIENT_D3 = "D3";
+  BNET_CLIENT_WTCG = "WTCG";
+  BNET_CLIENT_APP = "App";
+  BNET_CLIENT_HEROES = "Hero";
+  BNET_CLIENT_OVERWATCH = "Pro";
+  BNET_CLIENT_CLNT = "CLNT";
+  BNET_CLIENT_SC = "S1";
+  BNET_CLIENT_DESTINY2 = "DST2";
+  BNET_CLIENT_COD = "VIPR";
+  BNET_CLIENT_COD_MW = "ODIN";
+  BNET_CLIENT_COD_MW2 = "LAZR";
+  BNET_CLIENT_COD_BOCW = "ZEUS";
+  BNET_CLIENT_WC3 = "W3";
+  BNET_CLIENT_ARCADE = "RTRO";
+  BNET_CLIENT_CRASH4 = "WLBY";
+  BNET_CLIENT_D2 = "OSI";
+  BNET_CLIENT_COD_VANGUARD = "FORE";
+  BNET_CLIENT_DI = "ANBS";
+  BNET_CLIENT_ARCLIGHT = "GRY";
 
   if PRAT_MODULE == nil then
     return
@@ -1640,7 +1662,50 @@ L = {
       if self.db.profile.bnetclienticon then
         local client = GetBnetClientByID(message.PRESENCE_ID)
         if client then
-          message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format(BNet_GetClientTexture(client), 14)
+			if ( client == BNET_CLIENT_WOW ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-WoWicon", 14);
+			elseif ( client == BNET_CLIENT_SC2 ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-Sc2icon", 14);
+			elseif ( client == BNET_CLIENT_D3 ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-D3icon", 14);
+			elseif ( client == BNET_CLIENT_WTCG ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-WTCGicon", 14);
+			elseif ( client == BNET_CLIENT_HEROES ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-HotSicon", 14);
+			elseif ( client == BNET_CLIENT_OVERWATCH ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-Overwatchicon", 14);
+			elseif ( client == BNET_CLIENT_SC ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-SCicon", 14);
+			elseif ( client == BNET_CLIENT_DESTINY2 ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-Destiny2icon", 14);
+			elseif ( client == BNET_CLIENT_COD ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-CallOfDutyBlackOps4icon", 14);
+			elseif ( client == BNET_CLIENT_COD_MW ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-CallOfDutyMWicon", 14);
+			elseif ( client == BNET_CLIENT_COD_MW2 ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-CallOfDutyMW2icon", 14);
+			elseif ( client == BNET_CLIENT_COD_BOCW ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-CallOfDutyBlackOpsColdWaricon", 14);
+			elseif ( client == BNET_CLIENT_WC3 ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-Warcraft3Reforged", 14);
+			elseif ( client == BNET_CLIENT_ARCADE ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-BlizzardArcadeCollectionicon", 14);
+			elseif ( client == BNET_CLIENT_CRASH4 ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-CrashBandicoot4icon", 14);
+			elseif ( client == BNET_CLIENT_D2 ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-DiabloIIResurrectedicon", 14);
+			elseif ( client == BNET_CLIENT_COD_VANGUARD ) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-CallOfDutyVanguardicon", 14);
+			elseif ( client == BNET_CLIENT_DI) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-DiabloImmortalicon", 14);
+			elseif ( client == BNET_CLIENT_ARCLIGHT) then
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-WarcraftArclightRumbleicon", 14);
+			else
+				message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-Battleneticon", 14);
+			end	
+			--message.PLAYERCLIENTICON = BNet_GetClientEmbeddedAtlas(client)
+          --message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format(BNet_GetBattlenetClientAtlas(client), 14)
+          --message.PLAYERCLIENTICON = ("|T%s:%d:%d:%d:%d|t"):format("Interface\\FriendsFrame\\Battlenet-WoWicon", 14)
         end
       end
     else
