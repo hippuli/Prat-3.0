@@ -40,7 +40,7 @@ Prat:AddModuleToLoad(function()
 
   local function dbg(...) end
 
-  --[===[@debug@
+  --@debug@
   local function dbg(...)
     -- Prat:PrintLiteral(...)
   end
@@ -87,7 +87,7 @@ Prat:AddModuleToLoad(function()
     ["warnUser() called with nil argument!"] = true,
     ["warnUser() called with zero length string!"] = true,
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

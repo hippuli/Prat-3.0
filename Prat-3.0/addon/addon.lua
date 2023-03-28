@@ -67,11 +67,11 @@ BN_CHAT = true --(_G.GetBuildInfo() == "3.3.5") or (_G.GetBuildInfo() == "0.3.5"
 
 --ChunkSizes = {}
 
---[===[@debug@ 
+--@debug@ 
 Version = "Prat |cff8080ff3.0|r (|cff8080ff" .. "DEBUG" .. "|r)"
 
 
---@end-debug@]===]
+--@end-debug@
 
 --@non-debug@
 Version = "Prat |cff8080ff3.0|r (|cff8080ff".."3.9.1".."|r)"
@@ -94,10 +94,10 @@ Prat.IsRetail =  (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_MAINLINE or _G.WOW_PROJECT
 
 local function dbg(...) end
 
---[===[@debug@ 
+--@debug@ 
 function dbg(...) Prat:PrintLiteral(...) end
 
---@end-debug@]===]
+--@end-debug@
 
 
 
@@ -428,9 +428,9 @@ function addon:FCF_CopyChatSettings(chatFrame)
 end
 
 function addon:PostEnable()
-  --[===[@debug@
+  --@debug@
   Prat:Print(Version)
-  --@end-debug@]===]
+  --@end-debug@
 
   AddPrintMethods()
 
@@ -465,7 +465,7 @@ function addon:PostEnable()
   callbacks:Fire(Events.SECTIONS_UPDATED)
   callbacks:Fire(Events.ENABLED)
 
-  --[===[@debug@
+  --@debug@
 
   --	if ChunkSizes then
   --		local last = 0
@@ -496,7 +496,7 @@ function addon:PostEnable()
     _G.collectgarbage("collect")
     Prat:Print("Memory Use: " .. MemoryUse())
   end
-  --@end-debug@]===]
+  --@end-debug@
 
   if EnableGlobalCompletions then
     EnableGlobalCompletions(Prat, "Prat-Global-Autocomplete")

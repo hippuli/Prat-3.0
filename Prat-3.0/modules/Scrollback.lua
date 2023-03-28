@@ -28,10 +28,10 @@
 Prat:AddModuleExtension(function()
   local function dbg(...) end
 
-  --[===[@debug@
+  --@debug@
   function dbg(...) Prat:PrintLiteral(...) end
 
-  --@end-debug@]===]
+  --@end-debug@
 
 
   local module = Prat.Addon:GetModule("History", true)

@@ -37,7 +37,7 @@ Prat:AddModuleToLoad(function()
 
   local PL = mod.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["module_name"] = "Fading",
     ["module_desc"] = "Chat window text fading options.",
@@ -46,7 +46,7 @@ Prat:AddModuleToLoad(function()
     ["duration_name"] = "Set Fading Delay (Seconds)",
     ["duration_desc"] = "Set the number of seconds to wait before before fading text of chat windows.",
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

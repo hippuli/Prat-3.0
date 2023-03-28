@@ -40,7 +40,7 @@ Prat:AddModuleToLoad(function()
 
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["ChannelSticky"] = true,
     ["Chat channel sticky options."] = true,
@@ -54,7 +54,7 @@ Prat:AddModuleToLoad(function()
     ["Sticky Per Chat Frame"] = true,
     ["Toggle remembering the chat type last used per chat frame."] = true,
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

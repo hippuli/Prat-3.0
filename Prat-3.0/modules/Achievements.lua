@@ -27,10 +27,10 @@
 Prat:AddModuleToLoad(function()
   local function dbg(...) end
 
-  --[===[@debug@
+  --@debug@
   function dbg(...) Prat:PrintLiteral(...) end
 
-  --@end-debug@]===]
+  --@end-debug@
 
   local PRAT_MODULE = Prat:RequestModuleName("Achievements")
 
@@ -43,7 +43,7 @@ Prat:AddModuleToLoad(function()
   -- define localized strings
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["module_name"] = "Achievements",
     ["module_desc"] = "Achievment related customizations",
@@ -81,7 +81,7 @@ Prat:AddModuleToLoad(function()
     ["grats_donthave_9"] = "Looking forward to that one myself %s, good job!",
     ["grats_donthave_10"] = "I can't wait to get that one %s",
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

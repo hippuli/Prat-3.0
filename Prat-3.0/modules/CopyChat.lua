@@ -40,7 +40,7 @@ Prat:AddModuleToLoad(function()
 
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["CopyChat"] = true,
     ["Copy text from the active chat window."] = true,
@@ -67,7 +67,7 @@ Prat:AddModuleToLoad(function()
     BOTTOMRIGHT = "Bottom, Right",
     BOTTOMLEFT = "Bottom, Left",
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

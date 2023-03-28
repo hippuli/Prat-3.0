@@ -42,7 +42,7 @@ Prat:AddModuleToLoad(function()
 
   local PL = mod.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["Frames"] = true,
     ["Chat window frame parameter options"] = true,
@@ -63,7 +63,7 @@ Prat:AddModuleToLoad(function()
     ["rememberframepositions_name"] = "Remember Positions",
     ["rememberframepositions_desc"] = "Remember the chatframe positions, and restore them on load"
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

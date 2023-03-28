@@ -39,7 +39,7 @@ Prat:AddModuleToLoad(function()
 
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["History"] = true,
     ["Chat history options."] = true,
@@ -64,7 +64,7 @@ Prat:AddModuleToLoad(function()
     removespam_name = "Remove Spam",
     removespam_desc = "Remove addon spam messages when restoring the chat history"
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

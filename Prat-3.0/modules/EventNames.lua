@@ -38,7 +38,7 @@ Prat:AddModuleToLoad(function()
   local PL = mod.PL
 
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["EventNames"] = true,
     ["Chat window event name options."] = true,
@@ -49,7 +49,7 @@ Prat:AddModuleToLoad(function()
     ["allevents_name"] = "Process all events",
     ["allevents_desc"] = "Enable Prat processing for all chat events.",
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

@@ -37,7 +37,7 @@ Prat:AddModuleToLoad(function()
   -- define localized strings
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     module_name = "Invites",
     module_desc = "Options for easy inviting of players to groups",
@@ -46,7 +46,7 @@ Prat:AddModuleToLoad(function()
     ["Enable Invite Links"] = true,
     ["Toggle group invites by alt-clicking hyperlinked keywords like 'invite'."] = true,
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

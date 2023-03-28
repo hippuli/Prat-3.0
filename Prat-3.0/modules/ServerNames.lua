@@ -35,7 +35,7 @@ Prat:AddModuleToLoad(function()
 
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["ServerNames"] = true,
     ["Server name abbreviation options."] = true,
@@ -48,7 +48,7 @@ Prat:AddModuleToLoad(function()
     ["autoabbreviate_name"] = "Auto-abbreviate",
     ["autoabbreviate_desc"] = "Shorten the server name to 3 letters",
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

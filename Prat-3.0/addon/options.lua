@@ -47,7 +47,7 @@ setfenv(1, select(2, ...))
 local PL = Prat.Localizations
 
 
---[===[@debug@
+--@debug@
 PL:AddLocale(nil, "enUS", {
   prat = "Prat",
   ["display_name"] = "Display Settings",
@@ -67,7 +67,7 @@ PL:AddLocale(nil, "enUS", {
   load_disabledonrestart = "Disabled (reload)",
   load_enabledonrestart = "Enabled (reload)",
 })
---@end-debug@]===]
+--@end-debug@
 
 -- These Localizations are auto-generated. To help with localization
 -- please go to http://www.wowace.com/projects/prat-3-0/localization/

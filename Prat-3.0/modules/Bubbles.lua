@@ -34,7 +34,7 @@ Prat:AddModuleToLoad(function()
   local module = Prat:NewModule(PRAT_MODULE)
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     module_name = "Bubbles",
     module_desc = "Chat bubble related customizations",
@@ -53,7 +53,7 @@ Prat:AddModuleToLoad(function()
     transparent_name = "Transparent Bubbles",
     transparent_desc = "Hide background and border textures from chat bubbles. (/reload required to undo this option)",
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

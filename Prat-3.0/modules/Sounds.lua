@@ -36,7 +36,7 @@ Prat:AddModuleToLoad(function()
 
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["Sounds"] = true,
     ["A module to play sounds on certain chat messages."] = true,
@@ -67,7 +67,7 @@ Prat:AddModuleToLoad(function()
     ["Sound selection for outgoing (from you) chat messages"] = true,
     ["Custom Channels"] = true,
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

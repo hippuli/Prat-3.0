@@ -27,10 +27,10 @@
 Prat:AddModuleToLoad(function()
   local function dbg(...) end
 
-  --[===[@debug@
+  --@debug@
 --  function dbg(...) Prat:PrintLiteral(...) end
 
-  --@end-debug@]===]
+  --@end-debug@
 
   local PRAT_MODULE = Prat:RequestModuleName("Memory")
 
@@ -54,7 +54,7 @@ Prat:AddModuleToLoad(function()
     }
   })
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["module_name"] = "Memory",
     ["module_desc"] = "Support saving the Blizzard chat settings to your profile so they can be synced across all your characters",
@@ -71,7 +71,7 @@ Prat:AddModuleToLoad(function()
     options_header_name = "Options",
     msg_loadfailed = "Could not fully restore the chat settings"
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

@@ -35,7 +35,7 @@ Prat:AddModuleToLoad(function()
 
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["UrlCopy"] = true,
     ["URL formating options."] = true,
@@ -50,7 +50,7 @@ Prat:AddModuleToLoad(function()
     ["Toggle"] = true,
     ["Toggle the module on and off."] = true,
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

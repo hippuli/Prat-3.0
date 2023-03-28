@@ -29,9 +29,9 @@ Prat:AddModuleToLoad(function()
   local PRAT_MODULE = Prat:RequestModuleName("ChatTabs")
 
   local dbg = function() end
-  --[===[@debug@
+  --@debug@
   dbg = function(...) Prat:PrintLiteral(...) end
-  --@end-debug@]===]
+  --@end-debug@
 
   if PRAT_MODULE == nil then
     return
@@ -41,7 +41,7 @@ Prat:AddModuleToLoad(function()
 
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["Tabs"] = true,
     ["Chat window tab options."] = true,
@@ -63,7 +63,7 @@ Prat:AddModuleToLoad(function()
     ["preventdrag_name"] = "Prevent Dragging",
     ["preventdrag_desc"] = "Prevent dragging chat tabs with mouse",
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

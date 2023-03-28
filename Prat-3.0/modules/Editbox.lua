@@ -15,7 +15,7 @@ Prat:AddModuleToLoad(function()
   local PL = mod.PL
 
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["Editbox"] = true,
     ["Editbox options."] = true,
@@ -40,7 +40,7 @@ Prat:AddModuleToLoad(function()
     currently_broken_alt_behavior = "Arrow key behaviour broken in current WoW client,\n\nUse ALT-UP and ALT-DOWN instead of just UP DOWN to access history",
     ["Select the font to use for the edit box"] = true,
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

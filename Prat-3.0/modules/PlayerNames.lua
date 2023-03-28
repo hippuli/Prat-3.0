@@ -59,7 +59,7 @@ Prat:AddModuleToLoad(function()
   -- define localized strings
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["PlayerNames"] = true,
     ["Player name formating options."] = true,
@@ -122,7 +122,7 @@ Prat:AddModuleToLoad(function()
     bnetclienticon_name = "Show BNet Client Icon",
     bnetclienticon_desc = "Show an icon indicating which game or client the Battle.Net friend is using"
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

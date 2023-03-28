@@ -27,10 +27,10 @@
 Prat:AddModuleToLoad(function()
   local function dbg(...) end
 
-  --[===[@debug@
+  --@debug@
   function dbg(...) Prat:PrintLiteral(...) end
 
-  --@end-debug@]===]
+  --@end-debug@
 
   local PRAT_MODULE = Prat:RequestModuleName("Highlight")
 
@@ -52,7 +52,7 @@ Prat:AddModuleToLoad(function()
     }
   })
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["module_name"] = "Highlight",
     ["module_desc"] = "Highlight your own name, and various other text",
@@ -61,7 +61,7 @@ Prat:AddModuleToLoad(function()
     ["guild_name"] = "Highlight Guilds",
     ["guild_desc"] = "Highlight things which looks like guild names"
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/

@@ -26,10 +26,10 @@
 Prat:AddModuleToLoad(function()
   local function dbg(...) end
 
-  --[===[@debug@
+  --@debug@
   function dbg(...) Prat:PrintLiteral(...) end
 
-  --@end-debug@]===]
+  --@end-debug@
 
   local PRAT_MODULE = Prat:RequestModuleName("Timestamps")
 
@@ -42,7 +42,7 @@ Prat:AddModuleToLoad(function()
   -- define localized strings
   local PL = module.PL
 
-  --[===[@debug@
+  --@debug@
   PL:AddLocale(PRAT_MODULE, "enUS", {
     ["Timestamps"] = true,
     ["Chat window timestamp options."] = true,
@@ -74,7 +74,7 @@ Prat:AddModuleToLoad(function()
     ["Timestamp Text Format"] = true,
     ["Other Formatting Options"] = true,
   })
-  --@end-debug@]===]
+  --@end-debug@
 
   -- These Localizations are auto-generated. To help with localization
   -- please go to http://www.wowace.com/projects/prat-3-0/localization/
